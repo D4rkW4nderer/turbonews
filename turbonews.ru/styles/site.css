@@ -1,0 +1,1793 @@
+@font-face {
+	font-family: Huntsman;
+	src: url('../fonts/Huntsman.otf');
+}
+
+@font-face {
+	font-family: Exo;
+	src: url('../fonts/Exo.otf');
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url('../fonts/OpenSans.ttf');
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	color: #F8F8FF;
+	font-family: "OpenSans", sans-serif;
+	background-color: #B0E0E6;
+}
+
+/********************** СТИЛИ ДЛЯ ШАПКИ НАЧАЛО ****************************/
+
+header {
+	position: fixed;
+	background-color: #6495ED;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#siteLogoButton {
+	display: block;
+	width: 35px;
+	height: 35px;
+	align-items: center;
+	float: left;
+	margin-top: 8px;
+	margin-right: 2px;
+}
+
+#logoTitle {
+	font-family: "Huntsman", sans-serif;
+	float: left;
+	margin-top: 2px;
+	font-size: 25px;
+	color: #fff;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+#inHeader {
+	width: 80%;
+	margin: 0 auto;
+	height: 50px;
+	padding: 5px 0;
+}
+
+#headerNavigation {
+	align-items: center;
+	flex-direction: row;
+	display: flex;
+	height: 50px;
+	float: right;
+}
+
+.userPageButton {
+	width: 35px;
+	height: 35px;
+	align-items: center;
+	float: right;
+	margin-top: 12px;
+	margin-right: 2px;
+}
+
+#headerNavigation a {
+	display: block;
+	font-family: "OpenSans", sans-serif;
+	font-size: 15px;
+	color: #fff;
+	padding: 0 20px;
+	height: 60px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#headerNavigation .submenu {
+	position: absolute;
+	float: left;
+	display: none;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #6495ED;
+}
+
+#headerNavigation > li:hover .submenu {
+	display: block;
+	z-index: 10;
+}
+
+#headerNavigation a:hover {
+	background-color: #4169E1;
+}
+
+/********************** СТИЛИ ДЛЯ ШАПКИ КОНЕЦ ****************************/
+
+#content {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px 0;
+	margin-top: 50px;
+	min-height: 650px;
+}
+
+/********************** СТИЛИ ДЛЯ ФУТЕРА НАЧАЛО ****************************/
+
+footer {
+	float: left;
+	width: 100%;
+	height: 250px;
+	background-color: #6495ED;
+	margin-top: 20px;
+	bottom: 0;
+	position: relative;
+}
+
+#inFooter {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#copyrights {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#specialContacts {
+	padding-top: 7px;
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.social {
+	width: 35px;
+	height: 35px;
+	margin: 0 5px;
+}
+
+.contact {
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+	line-height: 25px;
+	margin-top: 10px;
+	padding: 7px;
+}
+
+.contactIcons {
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-right: 10px;
+}
+
+#footerNavigation {
+	position: absolute;
+	padding: 0;
+	right: 0;
+	top: 10px;
+	width: 135px;
+}
+
+#footerNavigation a {
+	display: block;
+	text-align: right;
+	color: #fff;
+	margin-bottom: 15px;
+	text-decoration: none;
+}
+
+#footerNavigation a:hover {
+	color: #4169E1;
+}
+
+/********************** СТИЛИ ДЛЯ ФУТЕРА КОНЕЦ ****************************/
+
+/********************** СТИЛИ ГЛАВНОЙ СТРАНИЦЫ НАЧАЛО ****************************/
+
+#promoImage {
+	background: url('../images/newsBanner.png') no-repeat;
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	float: left;
+}
+
+#promoText{
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 80px;
+	color: #fff;
+	font-family: Exo, sans-serif;
+	font-size: 2em;
+	word-spacing: 10px;
+	text-shadow: #3e3e3e 0 0 15px;
+}
+
+/********************** СТИЛИ ГЛАВНОЙ СТРАНИЦЫ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ НОВОСТЕЙ НАЧАЛО ****************************/
+
+#mainTitle {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	font-family: Exo, sans-serif;
+	font-size: 2em;
+	word-spacing: 10px;
+	color: #5F9FC0;
+}
+
+#addNewsButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+#addNewsButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.newsContainerWithPhoto {
+	margin-top: 20px;
+	float: left;
+    width: 98%;
+    min-height: 200px;
+    padding: 10px;
+    border: 2px solid #6495ED;
+    border-radius: 2px 2px 2px 2px;
+    margin-bottom: 25px;
+    display: inline;
+    position: relative; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.newsContainer {
+	margin-top: 20px;
+	float: left;
+    width: 98%;
+    min-height: 200px;
+    padding: 10px;
+    border: 2px solid #6495ED;
+    border-radius: 2px 2px 2px 2px;
+    margin-bottom: 25px;
+    display: inline;
+    position: relative; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.newsImage {
+	margin-right: 30px;
+	float: left;
+	width: 250px;
+	height: 250px;
+	background-color: #808080;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.newsImage img {
+	width: 97%;
+	height: 97%;
+	padding: 3px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.newsImage:hover {
+	cursor: pointer;
+}
+
+.newsMoreBtn {
+	width: 100%;
+    text-align: left;
+    font-family: Exo, sans-serif;
+    text-decoration: none;
+    color: #5A4BC0;
+    font-size: 20px;
+}
+
+.newsMoreBtn:hover {
+	cursor: pointer;
+	color: #419FEF;
+}
+
+.newsDate {
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: Exo, sans-serif;
+	color: #5A4BC0;
+}
+
+.newsText {
+	font-family: OpenSans, sans-serif;
+	color: #5754FF;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ НОВОСТЕЙ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ТЕКУЩЕЙ НОВОСТИ НАЧАЛО ****************************/
+
+#updNewsButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	float: left;
+}
+
+#updNewsButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.delCurNewsButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #CD5C5C;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	float: right;
+	margin-right: 10px;
+}
+
+.delCurNewsButton:hover {
+	color: #fff;
+	background-color: #B22222;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.curNewsContainerWPh {
+	margin-top: 20px;
+	float: left;
+    width: 97%;
+    min-height: 400px;
+    padding: 10px;
+    border: 2px solid #6495ED;
+    border-radius: 2px 2px 2px 2px;
+    margin-bottom: 25px;
+    display: inline;
+    position: relative; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.curNewsImage {
+	margin-right: 30px;
+	float: left;
+	width: 100%;
+	min-height: 250px;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.curNewsImage img {
+	width: 99%;
+	height: 99%;
+	padding: 5px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.curNewsWPhTitle {
+	float: left;
+	width: 100%;
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	word-spacing: 10px;
+	color: #5F9FC0;
+	margin-bottom: 15px;
+}
+
+.curNewsWPhDate {
+	text-align: left;
+	margin-bottom: 15px;
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	color: #5F9FC0;
+}
+
+.curNewsWPhText{
+	font-family: OpenSans, sans-serif;
+	color: #5754FF;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.curNewsContainer {
+	margin-top: 20px;
+	float: left;
+    width: 97%;
+    min-height: 400px;
+    padding: 10px;
+    border: 2px solid #6495ED;
+    border-radius: 2px 2px 2px 2px;
+    margin-bottom: 25px;
+    display: inline;
+    position: relative; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.curNewsTitle {
+	float: left;
+	width: 100%;
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	word-spacing: 10px;
+	color: #5F9FC0;
+	margin-bottom: 15px;
+}
+
+.curNewsDate {
+	text-align: left;
+	margin-bottom: 15px;
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	color: #5F9FC0;
+}
+
+.curNewsText {
+	font-family: OpenSans, sans-serif;
+	color: #5754FF;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ ТЕКУЩЕЙ НОВОСТИ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ТЕКУЩЕЙ НОВОСТИ (КОММЕНТАРИИ) НАЧАЛО ****************************/
+
+.commentTitle {
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	color: #5F9FC0;
+}
+
+#commentsBar {
+	width: 70%;
+	height: 40%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: auto;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
+	margin-top: 130px;
+}
+
+#commentsBarTable td {
+	padding: 3px;
+}
+
+.addNewCommentLabel {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: left;
+	text-align: center;
+}
+
+#commentText {
+	border: 1px solid #5F9FC0;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 400px;
+	-moz-appearance: textfield;
+	resize: none;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.addCommentButton {
+	margin-top: 15px;
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.addCommentButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.commentsContainer {
+	margin-top: 20px;
+	float: left;
+    width: 98%;
+    min-height: 170px;
+    padding: 10px;
+    border: 2px solid #6495ED;
+    border-radius: 2px 2px 2px 2px;
+    margin-bottom: 25px;
+    display: inline;
+    position: relative; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.commentsUserInfoContainer {
+	float: left;
+    width: 10%;
+    height: 100%;
+    padding: 3px;
+    display: inline;
+    position: relative;
+    border-right: 2px solid #5F9FC0;
+    margin-right: 10px;
+}
+
+.commentsUserPhoto {
+	margin-right: 30px;
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-color: #808080;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.commentsUserPhoto img {
+	width: 97%;
+	height: 97%;
+	padding: 3px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.commentsUserName {
+	float: left;
+	width: 100%;
+	margin-left: -4px;
+	text-align: center;
+	font-family: Exo, sans-serif;
+	font-size: 15px;
+	color: #5F9FC0;
+}
+
+.commentsUserType {
+	float: left;
+	width: 100%;
+	margin-left: 30px;
+	font-family: Exo, sans-serif;
+	font-size: 15px;
+	color: #5F9FC0;
+	margin-bottom: 5px;
+}
+
+.curCommentDate {
+	float: left;
+	width: 100%;
+	margin-left: -2px;
+	font-family: Exo, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	color: #5F9FC0;
+}
+
+.curCommentText {
+	font-family: OpenSans, sans-serif;
+	color: #5754FF;
+	font-size: 20px;
+	word-break: break-all;
+	width: 95%;
+}
+
+.commentBanContainer {
+	margin-top: 20px;
+	float: left;
+    width: 50%;
+    margin-left: 24%;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #A52A2A;
+    background-color: #E68072;
+    border-radius: 2px 2px 2px 2px;
+    margin-bottom: 25px;
+    display: inline;
+    position: relative; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bannedCommentText {
+	font-family: OpenSans, sans-serif;
+	text-align: center;
+	color: #A52A2A;
+	font-size: 20px;
+}
+
+.comOptionButtons {
+	width: 5%;
+	height: 100%;
+	float: right;
+
+}
+
+.banCommButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #F08080;
+	border: none;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	float: right;
+	margin-bottom: 10px;
+}
+
+.banCommButton:hover {
+	color: #fff;
+	background-color: #DC143C;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.banUserButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #9C0000;
+	border: none;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	float: right;
+}
+
+.banUserButton:hover {
+	color: #fff;
+	background-color: #FF0000;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.sendCompButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	float: left;
+}
+
+.sendCompButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+
+/********************** СТИЛИ СТРАНИЦЫ ТЕКУЩЕЙ НОВОСТИ (КОММЕНТАРИИ) КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ РЕДАКТИРОВАНИЯ ТЕКУЩЕЙ НОВОСТИ НАЧАЛО ****************************/
+
+#updCurNewsInfo {
+	margin-top: 20px;
+	float: left;
+    width: 97%;
+    min-height: 400px;
+    padding: 10px;
+    border: 2px solid #6495ED;
+    border-radius: 2px 2px 2px 2px;
+    margin-bottom: 25px;
+    display: inline;
+    position: relative; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+#updCurNewsTitle {
+	float: left;
+	width: 100%;
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	word-spacing: 10px;
+	color: #5F9FC0;
+	margin-bottom: 15px;
+}
+
+#updCurNewsDate {
+	text-align: left;
+	margin-bottom: 15px;
+	font-family: Exo, sans-serif;
+	font-size: 20px;
+	color: #5F9FC0;
+}
+
+#updCurNewsImage {
+	margin-right: 30px;
+	float: left;
+	width: 550px;
+	min-height: 250px;
+	border-radius: 2px 2px 2px 2px;
+}
+
+#updCurNewsImage img {
+	width: 99%;
+	height: 99%;
+	padding: 5px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#updCurNewsText {
+	font-family: OpenSans, sans-serif;
+	color: #5754FF;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+#updCurNewsBar {
+	width: 70%;
+	height: 40%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: auto;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
+}
+
+.updCurNewsLable {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: left;
+}
+
+.updCurNewsTB {
+	margin: 5px;
+	border: 1px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 400px;
+	-moz-appearance: textfield;
+	font-size: 15px;
+}
+
+#udpNewsPhotoButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 2px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 15px;
+	width: 400px;
+}
+
+#udpNewsPhotoButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#updCurNewsTextArea {
+	border: 1px solid #5F9FC0;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 400px;
+	-moz-appearance: textfield;
+	resize: none;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#selectUpdNewsType {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	display: inline-block;
+	margin-left: 30px;
+	width: 400px;
+}
+
+#selectUpdNewsType:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#updCurNewsBtn {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 20px;
+	display: inline-block;
+	width: 150px;
+	margin-top: 50px;
+}
+
+#updCurNewsBtn:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#updCurNewsTable td {
+	padding: 3px;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ РЕДАКТИРОВАНИЯ ТЕКУЩЕЙ НОВОСТИ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ДОБАВЛЕНИЯ НОВОСТЕЙ НАЧАЛО ****************************/
+
+#addNewsBar {
+	width: 70%;
+	height: 40%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: auto;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 100px;
+	margin-top: 130px;
+}
+
+.addNewsText {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: left;
+}
+
+.addNewsTB {
+	margin: 5px;
+	border: 1px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 400px;
+	-moz-appearance: textfield;
+	font-size: 15px;
+}
+
+#newsPhotoButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 2px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 15px;
+	width: 400px;
+}
+
+#newsPhotoButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#newsTextArea {
+	border: 1px solid #5F9FC0;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 400px;
+	-moz-appearance: textfield;
+	resize: none;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#selectNewsType {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	display: inline-block;
+	margin-left: 30px;
+	width: 400px;
+}
+
+#selectNewsType:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#addNewNewsBtn {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 20px;
+	display: inline-block;
+	width: 150px;
+	margin-top: 50px;
+}
+
+#addNewNewsBtn:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#addNewsTable td {
+	padding: 3px;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ ДОБАВЛЕНИЯ НОВОСТЕЙ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ОТПРАВКИ ЖАЛОБЫ НАЧАЛО ****************************/
+
+#sendComplaintBar {
+	width: 65%;
+	height: 40%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: auto;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 60px;
+	margin-top: 120px;
+}
+
+#sendComplaintTable td {
+	padding: 3px;
+}
+
+.sendCompText {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: left;
+}
+
+#selectCompReason {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	display: inline-block;
+	/*margin-left: 5px;*/
+	width: 410px;
+}
+
+#selectCompReason:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#complaintsTextArea {
+	border: 1px solid #5F9FC0;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 400px;
+	-moz-appearance: textfield;
+	resize: none;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#sendCompButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 20px;
+	display: inline-block;
+	width: 150px;
+	margin-top: 25px;
+}
+
+#sendCompButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ ОТПРАВКИ ЖАЛОБЫ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ВХОДА И РЕГИСТРАЦИИ НАЧАЛО ****************************/
+
+#loginTitle {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+	color: #5F9FC0;
+	margin-bottom: 100px;
+}
+
+#loginPageBar {
+	width: 50%;
+	height: 30%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: auto;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 100px;
+}
+
+.loginInfo {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: left;
+}
+
+.loginTextBox {
+	margin: 5px;
+	border: 1px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 200px;
+	-moz-appearance: textfield;
+	font-size: 15px;
+}
+
+.userLogBut {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+.userLogBut:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#loginBarTable td {
+	padding: 3px;
+}
+
+.requiredField {
+	font-size: 15px;
+	color: #A52A2A;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ ВХОДА И РЕГИСТРАЦИИ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ НАЧАЛО ****************************/
+
+#userPageTitle {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+	color: #5F9FC0;
+	margin-bottom: 50px;
+}
+
+.userPagePhoto {
+	margin-right: 30px;
+	float: left;
+	width: 220px;
+	height: 220px;
+	background-color: #808080;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.userPagePhoto img {
+	width: 97%;
+	height: 97%;
+	padding: 3px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#userPageLogin {
+	font-family: Exo, sans-serif;
+	font-size: 35px;
+	margin-top: 5px;
+	color: #5F9FC0;
+}
+
+#userPageType {
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	margin-top: 50px;
+	color: #5F9FC0;
+}
+
+#userPageCreateDate {
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	margin-top: 5px;
+	color: #5F9FC0;
+}
+
+.userPageSpecTitle {
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	margin-top: 20px;
+	color: #5F9FC0;
+}
+
+#userPageAboutUser {
+	margin-top: 10px;
+    font-family: OpenSans, sans-serif;
+	color: #4169E1;
+	font-size: 20px;
+	word-break: break-all;
+}
+
+#userLogOutBut {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #A52A2A;
+	border: none;
+	float: right;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#userLogOutBut:hover {
+	color: #fff;
+	background-color: #800000;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#userSelfDistrButt {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #8B0000;
+	border: none;
+	float: left;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 30%;
+}
+
+#userSelfDistrButt:hover {
+	color: #fff;
+	background-color: #FF0000;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.userNewPhotoButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.userNewPhotoButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#changeUsrInfo {
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	margin-top: 25px;
+	color: #5F9FC0;
+}
+
+#userUpdInfoText {
+	border: 1px solid #5F9FC0;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 580px;
+	-moz-appearance: textfield;
+	resize: none;
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+#userUpdInfoButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+#userUpdInfoButton:hover{
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#userChangePassword {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	float: left;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 40px;
+}
+
+#userChangePassword:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#userListAdminButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	float: left;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 35px;
+	margin-left: 41.5%;
+}
+
+#userListAdminButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#complaintsListAdminButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	float: left;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 45px;
+	margin-left: 44.5%;
+}
+
+#complaintsListAdminButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ ПОЛЬЗОВАТЕЛЯ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ УСПЕШНОЙ РЕГИСТРАЦИИ НАЧАЛО ****************************/
+
+#SRegTitle {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+	color: #5F9FC0;
+	margin-bottom: 40px;
+}
+
+#SRegButtonTitle {
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	margin-top: 5px;
+	color: #5F9FC0;
+}
+
+#SRegButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+#SRegButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ УСПЕШНОЙ РЕГИСТРАЦИИ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ С ОШИБКОЙ НАЧАЛО ****************************/
+
+#errorImage {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#errorImage img {
+    width: 100%;
+}
+
+#errorText {
+	font-family: Exo, sans-serif;
+	font-size: 25px;
+	color: #5F9FC0;
+	margin:auto;
+	text-align: center;
+}
+
+#errorGoMain {
+	display: inline-block;
+	border: none;
+    padding: 10px 10px;
+    background-color: #6495ED;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    vertical-align: bottom;
+  	width: 240px;
+  	border-radius: 2px 2px 2px 2px;
+  	font-size: 20px;
+  	margin-top: 50px;
+}
+
+#errorGoMain:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ С ОШИБКОЙ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ИЗМЕНЕНИЯ ПАРОЛЯ НАЧАЛО ****************************/
+
+#usrChangePassTitle {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+	color: #5F9FC0;
+	margin-bottom: 50px;
+}
+
+#changeUsrPassBar {
+	width: 50%;
+	height: 30%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: auto;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 100px;
+}
+
+.changePassInfo {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: left;
+}
+
+.changePassTB {
+	margin: 5px;
+	border: 1px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	padding: 5px;
+	width: 250px;
+	-moz-appearance: textfield;
+	font-size: 15px;
+}
+
+#changeUsrPassBut {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+#changeUsrPassBut:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#changeUsrPassTable td {
+	padding: 3px;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ ИЗМЕНЕНИЯ ПАРОЛЯ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ СПИСКА ПОЛЬЗОВАТЕЛЕЙ НАЧАЛО ****************************/
+
+#userListTitle {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+	color: #5F9FC0;
+	margin-bottom: 40px;
+}
+
+.userListTable {
+	border-collapse: collapse;
+	margin: auto;
+	width: 95%;
+	table-layout: fixed;
+}
+
+.userListTable th {
+	font-size: 17px;
+	color: #6e6e6e;
+	font-family: "OpenSans", sans-serif;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	padding: 5px;
+}
+
+.userListTable td {
+	font-size: 15px;
+	color: #4169E1;
+	font-family: "OpenSans", sans-serif;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	padding: 5px;
+}
+
+.userListActionButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	display: inline-block;
+	width: 15%;
+}
+
+.userListActionButton img {
+	width: 100%;
+	height: 100%;
+}
+
+.userListActionButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ СПИСКА ПОЛЬЗОВАТЕЛЕЙ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ СПИСКА ЖАЛОБ НАЧАЛО ****************************/
+
+#complaintListTable {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+	color: #5F9FC0;
+	margin-bottom: 40px;
+}
+
+#compListTable {
+	border-collapse: collapse;
+	margin: auto;
+	width: 100%;
+	table-layout: fixed;
+}
+
+#compListTable th {
+	font-size: 15px;
+	color: #6e6e6e;
+	font-family: "OpenSans", sans-serif;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	padding: 2px;
+}
+
+#compListTable td {
+	font-size: 13px;
+	color: #4169E1;
+	font-family: "OpenSans", sans-serif;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	padding: 2px;
+	word-break: break-all;
+}
+
+dialog{
+	border-radius: 20px;
+	background: yellow;
+}
+
+.compChecked {
+	background-color: #90EE90;
+}
+
+.checkCompButton {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	font-size: 20px;
+	width: 40%;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	display: inline-block;
+}
+
+.checkCompButton:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ СПИСКА ЖАЛОБ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ ИЗМЕНЕНИЯ ТИПА ПОЛЬЗОВАТЕЛЯ НАЧАЛО ****************************/
+
+#changeUserTypeBar {
+	width: 55%;
+	height: 50%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: auto;
+	border: 2px solid #6495ED;
+	border-radius: 2px 2px 2px 2px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 70px;
+}
+
+#changeUserTypeTable td{
+	padding: 3px;
+}
+
+.userUpdTypeText {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: left;
+	margin-right: 10px;
+}
+
+.userUpdTypeInfo {
+	font-family: OpenSans, sans-serif;
+	color: #3e3e3e;
+	font-size: 15px;
+	float: right;
+}
+
+#selectUsrChangeType {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+#selectUsrChangeType:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#userChangeTypeBtn {
+	border-radius: 2px 2px 2px 2px;
+	background-color: #6495ED;
+	border: none;
+	color: #fff;
+	padding: 5px 5px;
+	display: inline-block;
+}
+
+#userChangeTypeBtn:hover {
+	color: #fff;
+	background-color: #4169E1;
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ ИЗМЕНЕНИЯ ТИПА ПОЛЬЗОВАТЕЛЯ КОНЕЦ ****************************/
+
+/********************** СТИЛИ СТРАНИЦЫ О НАС НАЧАЛО ****************************/
+
+#aboutUsTitle {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: center;
+	color: #5F9FC0;
+	margin-bottom: 40px;
+}
+
+#aboutUsText {
+	font-family: OpenSans, sans-serif;
+	color: #5754FF;
+	font-size: 15px;
+	float: left;
+	margin-bottom: 40px;
+}
+
+/********************** СТИЛИ СТРАНИЦЫ О НАС КОНЕЦ ****************************/
+
